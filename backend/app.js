@@ -54,6 +54,10 @@ app.get("/:n", (req, res) => {
 	}
 });
 
-app.listen(PORT, () => {
-	console.log(`Magic Math API is running on http://127.0.0.1:${PORT}`);
-});
+if (process.env.NODE_ENV !== "test") {
+	app.listen(PORT, () => {
+		console.log(`Magic Math API is running on http://127.0.0.1:${PORT}`);
+	});
+}
+
+module.exports = app;
