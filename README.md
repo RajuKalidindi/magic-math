@@ -18,7 +18,7 @@ Before you begin, ensure you have the following installed:
 
 Follow these steps to set up and run the application locally:
 
-**Clone the Repository**
+- **Clone the Repository**
 
     First, clone the repository on GitHub to your local machine using:
 
@@ -26,110 +26,110 @@ Follow these steps to set up and run the application locally:
     git clone https://github.com/RajuKalidindi/magic-math.git
     ```
 
-**Backend Setup**
+- **Backend Setup**
 
-1.  **Navigate into the Project Directory:**
+    1.  **Navigate into the Project Directory:**
 
-    ```bash
-    cd magic-math/backend
-    ```
+        ```bash
+        cd magic-math/backend
+        ```
 
-2.  **Install Dependencies Install the required dependencies by running:**
+    2.  **Install Dependencies Install the required dependencies by running:**
 
-    ```bash
-    npm install
-    ```
+        ```bash
+        npm install
+        ```
 
-3.  **Create and Set Environment Variable:**
+    3.  **Create and Set Environment Variable:**
 
-    Create the following .env file in the root of the backend project:
+        Create the following .env file in the root of the backend project:
 
-    -   .env
+        -   .env
 
-    Set the PORT variable inside the .env:
+        Set the PORT variable inside the .env:
 
-    ```bash
-    PORT=5000
-    ```
+        ```bash
+        PORT=5000
+        ```
 
-4.  **Running the Application:**
+    4.  **Running the Application:**
 
-    To start the application, run the following command:
+        To start the application, run the following command:
 
-    ```bash
-    npm run dev
-    ```
+        ```bash
+        npm run dev
+        ```
 
-    Magic Math API will start running on (http://127.0.0.1:5000). Navigate to this url to view your backend in action.
+        Magic Math API will start running on (http://127.0.0.1:5000). Navigate to this url to view your backend in action.
 
-    _You can test the endpoint using the following command:_
+        _You can test the endpoint using the following command:_
 
-    ```
-    $ curl http://127.0.01:5000/api/{number}
-    ```
+        ```
+        $ curl http://127.0.01:5000/api/{number}
+        ```
 
-    Replace `{number}` with the desired input value.
+        Replace `{number}` with the desired input value.
 
-    For example, requesting the magic value for `4` will return:
-    `{"result":14}`
+        For example, requesting the magic value for `4` will return:
+        `{"result":14}`
 
-**Frontend Setup**
+- **Frontend Setup**
 
-1.  **Navigate into the Project Directory:**
+    1.  **Navigate into the Project Directory:**
 
-    ```bash
-    cd magic-math/frontend
-    ```
+        ```bash
+        cd magic-math/frontend
+        ```
 
-2.  **Install Dependencies Install the required dependencies by running:**
+    2.  **Install Dependencies Install the required dependencies by running:**
 
-    ```bash
-    npm install
-    ```
+        ```bash
+        npm install
+        ```
 
-3.  **Create and Set Environment Variable:**
+    3.  **Create and Set Environment Variable:**
 
-    Create the following .env file in the root of the backend project:
+        Create the following .env file in the root of the backend project:
 
-    -   .env
+        -   .env
 
-    Set the VITE_API_URL variable inside the .env:
+        Set the VITE_API_URL variable inside the .env:
 
-    ```bash
-    VITE_API_URL=http://127.0.0.1:5000/api
-    ```
+        ```bash
+        VITE_API_URL=http://127.0.0.1:5000/api
+        ```
 
-4.  **Running the Application:**
+    4.  **Running the Application:**
 
-    To start the application, run the following command:
+        To start the application, run the following command:
 
-    ```bash
-    npm run dev
-    ```
+        ```bash
+        npm run dev
+        ```
 
-    React application will start running on http://localhost:5173/. Navigate to this url to view your frontend in action.
+        React application will start running on http://localhost:5173/. Navigate to this url to view your frontend in action.
 
 ## Unit tests
 
 1. **Backend tests**:
 
-    Head into the `magic-math/backend` folder and run:
+    Navigate to the `magic-math/backend` directory and execute the following command:
 
     ```
     npm test
     ```
 
-    All the 3 API test cases should pass
+    This will run all three API test cases, which should pass successfully.
 
 2. **Frontend tests**:
 
-    Head into the `magic-math/frontend` folder and run:
+    Navigate to the `magic-math/frontend` directory and execute:
 
     ```
     npm test
     ```
 
-    \*Note: Ensure backend server is up and running. All the 4 test cases should pass
+    \*Note: Ensure that the backend server is running before executing frontend tests. All four test cases should pass successfully.
 
     For test coverage report run:
 
