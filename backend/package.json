@@ -1,6 +1,6 @@
 {
 	"scripts": {
-		"dev": "node app.js",
+		"dev": "node index.js",
 		"test": "NODE_ENV=test jest"
 	},
 	"dependencies": {

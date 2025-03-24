@@ -1,5 +1,5 @@
 const request = require("supertest");
-const app = require("./app");
+const app = require(".");
 
 describe("Magic Math API Tests", () => {
 	test("GET /10 should return a valid result", async () => {
